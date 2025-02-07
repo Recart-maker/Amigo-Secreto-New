@@ -1,7 +1,7 @@
-let friends []:
+let friends = [];
 
 function agregarAmigo() {
-    let amigo = document.getElementById("amigo").ariaValueMax;
+    let amigo = document.getElementById("amigo").value;
 
     if (amigo == "") {
         alert("Por favor, inserte un nombre");
