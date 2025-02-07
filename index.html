@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <title>Amigo__Secreto__New</title>
 </head>
+
 <body>
+    <main class="main-content">
+        <header class="heade-banner">
+            <h1 class="main-title">Amigo__Secreto__New</h1>
+            <img src="assets/amigo-secreto.png" alt="imagen del amigo amigo-secreto">
+        </header>
+
+        <section class="input-section">
+            <h2 class="section-title">Digite el nombre de su amigo</h2>
+            <div class="input wapper">
+                <input type="text" id="amigo" class="input-name"placeholder=Escribe un nombre">
+                <button class="button-add" onclick="agregarAmigo()">añadir</button>
+            </div>
+
+            <ul id="listaAmigos" class="name-list"aria-labelledby="listaAmigos"role="list"></ul>
+
+
+            <div class="button-container">
+                <button class="button-draw"onclick="sortearAmigo()" aria-label="sortear amigo-secreto">
+                    <img src="=assets/play_circle_outline.png" alt="icono para sortear">
+                    Sortear amigo
+                </button>    
+            </div>
+        </section>    
+    </main>  
     
+    <script src="app.js" defer></script>
 </body>
 </html>
